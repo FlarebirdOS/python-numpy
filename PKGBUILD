@@ -1,6 +1,6 @@
 pkgname=python-numpy
-pkgver=2.3.3
-pkgrel=1
+pkgver=2.3.4
+pkgrel=2
 pkgdesc="Scientific tools for Python"
 arch=('x86_64')
 url="https://www.numpy.org/"
@@ -13,7 +13,7 @@ makedepends=(
     'python-meson-python'
     'python-pyproject-metadata')
 source=(https://github.com/numpy/numpy/releases/download/v${pkgver}/${pkgname#*-}-${pkgver}.tar.gz)
-sha256sums=(ddc7c39727ba62b80dfdbedf400d1c10ddfa8eefbd7ec8dcb118be8b56d31029)
+sha256sums=(a7d018bfedb375a8d979ac758b120ba846a7fe764911a64465fd87b8729f4a6a)
 
 build() {
     cd  ${pkgname#*-}-${pkgver}
